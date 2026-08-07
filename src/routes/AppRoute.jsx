@@ -65,6 +65,8 @@ function Layout() {
           }
         />
       </Routes>
+
+      {!hideNavbar && <Footer />}
     </>
   );
 }
@@ -73,7 +75,6 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Layout />
-      <Footer/>
     </BrowserRouter>
   );
 }
